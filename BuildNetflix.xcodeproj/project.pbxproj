@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
 		B9454604298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
+		B9454606298D59BB00A744F1 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* WhiteButton.swift */; };
+		B9454607298D59BB00A744F1 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* WhiteButton.swift */; };
 		B9D1861D2988BA1300F3D8AD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861C2988BA1300F3D8AD /* HomeVM.swift */; };
 		B9D1861E2988BA1300F3D8AD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861C2988BA1300F3D8AD /* HomeVM.swift */; };
 		B9D18620298B198B00F3D8AD /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */; };
@@ -32,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		B9454605298D59BB00A744F1 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		B9D1861C2988BA1300F3D8AD /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		B9E713E129836ED10075E228 /* BuildNetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildNetflixApp.swift; sourceTree = "<group>"; };
@@ -81,8 +84,9 @@
 				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
 				B9E713E229836ED10075E228 /* ContentView.swift */,
 				B9E7140C29841A3B0075E228 /* GlobalHelpers.swift */,
-				B9E713E329836ED40075E228 /* Assets.xcassets */,
 				B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */,
+				B9454605298D59BB00A744F1 /* WhiteButton.swift */,
+				B9E713E329836ED40075E228 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -229,6 +233,7 @@
 				B9E7140A298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
 				B9E713F129836ED50075E228 /* BuildNetflixApp.swift in Sources */,
 				B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
+				B9454606298D59BB00A744F1 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +250,7 @@
 				B9E7140B298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
 				B9E713F229836ED50075E228 /* BuildNetflixApp.swift in Sources */,
 				B9454604298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
+				B9454607298D59BB00A744F1 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
