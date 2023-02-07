@@ -83,9 +83,9 @@
 				B9E71402298370050075E228 /* Home */,
 				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
 				B9E713E229836ED10075E228 /* ContentView.swift */,
-				B9E7140C29841A3B0075E228 /* GlobalHelpers.swift */,
 				B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */,
 				B9454605298D59BB00A744F1 /* WhiteButton.swift */,
+				B9E7140C29841A3B0075E228 /* GlobalHelpers.swift */,
 				B9E713E329836ED40075E228 /* Assets.xcassets */,
 			);
 			path = Shared;

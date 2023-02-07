@@ -77,6 +77,10 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+                .padding(.top, 250)
+            )
         }
         .foregroundColor(.white)
     }
@@ -84,6 +88,6 @@ struct TopMoviePreview: View {
 
 struct TopMoviePreview_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoviePreview(movie: exampleMovie1)
+        TopMoviePreview(movie: exampleMovie2)
     }
 }
