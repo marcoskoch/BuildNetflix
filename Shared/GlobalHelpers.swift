@@ -19,7 +19,7 @@ let exampleMovies = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4,
 
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(
-        gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]),
+        gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.99)]),
         startPoint: .top,
         endPoint: .bottom
     )
