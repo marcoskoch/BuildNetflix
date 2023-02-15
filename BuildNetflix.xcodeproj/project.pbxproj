@@ -11,8 +11,8 @@
 		B924744E299582B500A07249 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924744C299582B500A07249 /* MovieDetail.swift */; };
 		B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
 		B9454604298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
-		B9454606298D59BB00A744F1 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* WhiteButton.swift */; };
-		B9454607298D59BB00A744F1 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* WhiteButton.swift */; };
+		B9454606298D59BB00A744F1 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* PlayButton.swift */; };
+		B9454607298D59BB00A744F1 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* PlayButton.swift */; };
 		B983E620299AD820007D5FA2 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983E61F299AD820007D5FA2 /* Episode.swift */; };
 		B983E622299AD840007D5FA2 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983E61F299AD820007D5FA2 /* Episode.swift */; };
 		B9D1861D2988BA1300F3D8AD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861C2988BA1300F3D8AD /* HomeVM.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B924744C299582B500A07249 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		B9454605298D59BB00A744F1 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		B9454605298D59BB00A744F1 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		B983E61F299AD820007D5FA2 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		B9D1861C2988BA1300F3D8AD /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */,
 				B9E71409298419DA0075E228 /* StandartHomeMovie.swift */,
 				B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */,
-				B9454605298D59BB00A744F1 /* WhiteButton.swift */,
+				B9454605298D59BB00A744F1 /* PlayButton.swift */,
 			);
 			name = HelperViews;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 				B9E7140A298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
 				B9E713F129836ED50075E228 /* BuildNetflixApp.swift in Sources */,
 				B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
-				B9454606298D59BB00A744F1 /* WhiteButton.swift in Sources */,
+				B9454606298D59BB00A744F1 /* PlayButton.swift in Sources */,
 				B924744D299582B500A07249 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +285,7 @@
 				B9E7140B298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
 				B9E713F229836ED50075E228 /* BuildNetflixApp.swift in Sources */,
 				B9454604298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
-				B9454607298D59BB00A744F1 /* WhiteButton.swift in Sources */,
+				B9454607298D59BB00A744F1 /* PlayButton.swift in Sources */,
 				B924744E299582B500A07249 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
