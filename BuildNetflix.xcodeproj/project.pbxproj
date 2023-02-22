@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B924744D299582B500A07249 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924744C299582B500A07249 /* MovieDetail.swift */; };
 		B924744E299582B500A07249 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924744C299582B500A07249 /* MovieDetail.swift */; };
+		B944731429A697F400164FA0 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944731329A697F400164FA0 /* CustomTabSwitcher.swift */; };
 		B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
 		B9454604298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */; };
 		B9454606298D59BB00A744F1 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454605298D59BB00A744F1 /* PlayButton.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		B924744C299582B500A07249 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		B944731329A697F400164FA0 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		B9454605298D59BB00A744F1 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		B983E61F299AD820007D5FA2 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				B9E713E229836ED10075E228 /* ContentView.swift */,
 				B9E713E329836ED40075E228 /* Assets.xcassets */,
 				B924744C299582B500A07249 /* MovieDetail.swift */,
+				B944731329A697F400164FA0 /* CustomTabSwitcher.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				B9D18620298B198B00F3D8AD /* TopMoviePreview.swift in Sources */,
 				B9E7140A298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
 				B9E713F129836ED50075E228 /* BuildNetflixApp.swift in Sources */,
+				B944731429A697F400164FA0 /* CustomTabSwitcher.swift in Sources */,
 				B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
 				B9454606298D59BB00A744F1 /* PlayButton.swift in Sources */,
 				B924744D299582B500A07249 /* MovieDetail.swift in Sources */,
