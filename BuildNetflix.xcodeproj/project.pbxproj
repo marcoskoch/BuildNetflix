@@ -20,6 +20,7 @@
 		B957093229AD418A003310B2 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957093129AD418A003310B2 /* SwiftUIVideoView.swift */; };
 		B957093529AD460D003310B2 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957093429AD460D003310B2 /* VideoPreviewImage.swift */; };
 		B957093729AD4A1A003310B2 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957093629AD4A1A003310B2 /* TrailerList.swift */; };
+		B957093829AD50C2003310B2 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957092F29AD40B6003310B2 /* Trailer.swift */; };
 		B983E620299AD820007D5FA2 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983E61F299AD820007D5FA2 /* Episode.swift */; };
 		B983E622299AD840007D5FA2 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983E61F299AD820007D5FA2 /* Episode.swift */; };
 		B9D1861D2988BA1300F3D8AD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861C2988BA1300F3D8AD /* HomeVM.swift */; };
@@ -87,27 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B92474492995802A00A07249 /* HelperViews */ = {
-			isa = PBXGroup;
-			children = (
-				B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */,
-				B9E71409298419DA0075E228 /* StandartHomeMovie.swift */,
-				B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */,
-				B9454605298D59BB00A744F1 /* PlayButton.swift */,
-			);
-			name = HelperViews;
-			sourceTree = "<group>";
-		};
-		B924744A2995807300A07249 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B9E71406298419370075E228 /* Movie.swift */,
-				B983E61F299AD820007D5FA2 /* Episode.swift */,
-				B957092F29AD40B6003310B2 /* Trailer.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		B924744B2995808500A07249 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +96,7 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		B944731529A957EF00164FA0 /* MovieDatail */ = {
+		B944731529A957EF00164FA0 /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
 				B944731329A697F400164FA0 /* CustomTabSwitcher.swift */,
@@ -124,7 +104,7 @@
 				B944731729A9583100164FA0 /* MoreLikeThis.swift */,
 				B957093629AD4A1A003310B2 /* TrailerList.swift */,
 			);
-			path = MovieDatail;
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 		B957093329AD44C2003310B2 /* VideoPlayer */ = {
@@ -134,6 +114,27 @@
 				B957093429AD460D003310B2 /* VideoPreviewImage.swift */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		B957093929AD50D1003310B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B983E61F299AD820007D5FA2 /* Episode.swift */,
+				B957092F29AD40B6003310B2 /* Trailer.swift */,
+				B9E71406298419370075E228 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B957093A29AD50F0003310B2 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */,
+				B9E71409298419DA0075E228 /* StandartHomeMovie.swift */,
+				B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */,
+				B9454605298D59BB00A744F1 /* PlayButton.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 		B9E713DB29836ED10075E228 = {
@@ -149,13 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				B9E71402298370050075E228 /* HomeViews */,
-				B92474492995802A00A07249 /* HelperViews */,
-				B924744A2995807300A07249 /* Model */,
 				B957093329AD44C2003310B2 /* VideoPlayer */,
-				B944731529A957EF00164FA0 /* MovieDatail */,
+				B957093A29AD50F0003310B2 /* HelperViews */,
+				B957093929AD50D1003310B2 /* Model */,
+				B944731529A957EF00164FA0 /* MovieDetail */,
 				B924744B2995808500A07249 /* Helpers */,
-				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
 				B9E713E229836ED10075E228 /* ContentView.swift */,
+				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
 				B9E713E329836ED40075E228 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -321,6 +322,7 @@
 				B9E7140129836FFE0075E228 /* HomeView.swift in Sources */,
 				B9D1861E2988BA1300F3D8AD /* HomeVM.swift in Sources */,
 				B9E713F429836ED50075E228 /* ContentView.swift in Sources */,
+				B957093829AD50C2003310B2 /* Trailer.swift in Sources */,
 				B9E71408298419370075E228 /* Movie.swift in Sources */,
 				B9D18621298B198B00F3D8AD /* TopMoviePreview.swift in Sources */,
 				B9E7140B298419DA0075E228 /* StandartHomeMovie.swift in Sources */,
