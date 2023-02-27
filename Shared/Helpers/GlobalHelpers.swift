@@ -8,6 +8,20 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.youtube.com/embed/BjDHdf1Vd0E")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/103")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/102")!
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL)
+
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL2)
+
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL3)
+
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+
 let exampleEpisodeInfo = CurrentEpisodeInfo(episodeName: "Beginnins and Ending", description: "O iludido chefe Michael procura conduzir seus funcionários insatisfeitos na empresa de papel Dunder Mifflin em meio a incessantes contratempos e idiossincrasias.", season: 1, episode: 1)
 
 let exampleMovie1 = Movie(
@@ -20,7 +34,9 @@ let exampleMovie1 = Movie(
     numberOfSeasons: 1,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
-    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel"
+    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
+    moreLikeThis: exampleMovies,
+    trailers: exampleTrailers
 )
 
 let exampleMovie2 = Movie(
@@ -34,7 +50,8 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    promotionHeadline: "Best Rated Show"
+    promotionHeadline: "Best Rated Show",
+    trailers: exampleTrailers
 )
 
 let exampleMovie3 = Movie(
@@ -47,7 +64,8 @@ let exampleMovie3 = Movie(
     numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
-    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel"
+    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
+    trailers: exampleTrailers
 )
 
 let exampleMovie4 = Movie(
@@ -61,7 +79,8 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    promotionHeadline: "New episodes coming soon"
+    promotionHeadline: "New episodes coming soon",
+    trailers: exampleTrailers
 )
 
 let exampleMovie5 = Movie(
@@ -74,7 +93,8 @@ let exampleMovie5 = Movie(
     numberOfSeasons: 5,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
-    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel"
+    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
+    trailers: exampleTrailers
 )
 
 let exampleMovie6 = Movie(
@@ -88,10 +108,28 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    promotionHeadline: "Watch season 6 now"
+    promotionHeadline: "Watch season 6 now",
+    trailers: exampleTrailers
 )
 
-let exampleMovies = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "After Life",
+    thumbnailURL: URL(string: "https://picsum.photos/200/305")!,
+    categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+    year: 2020,
+    rating: "TV-MA",
+    numberOfSeasons: 6,
+    defaultEpisodeInfo: exampleEpisodeInfo,
+    creators: "Baran bo Oban, Jantje Friese",
+    cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
+    promotionHeadline: "Watch season 6 now",
+    trailers: exampleTrailers
+)
+
+var exampleMovies: [Movie] {
+    return [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
+}
 
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(
