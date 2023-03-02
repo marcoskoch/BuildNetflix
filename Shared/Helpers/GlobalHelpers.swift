@@ -51,6 +51,35 @@ let exampleEpisode3 = Episode(
     length: 52,
     videoURL: exampleVideoURL)
 
+let exampleEpisode4 = Episode(
+    name: "Beginnings and Endings",
+    season: 2,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/105",
+    description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.",
+    length: 53,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode5 = Episode(
+    name: "Dark Matter",
+    season: 2,
+    episodeNumber: 2,
+    thumbnailImageURLString: "https://picsum.photos/300/107",
+    description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis.",
+    length: 54,
+    videoURL: exampleVideoURL)
+
+let exampleEpisode6 = Episode(
+    name: "Ghosts",
+    season: 3,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/108",
+    description: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
+    length: 52,
+    videoURL: exampleVideoURL)
+
+var allExampleEpisodes = [exampleEpisode1, exampleEpisode2, exampleEpisode3, exampleEpisode4, exampleEpisode5, exampleEpisode6]
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "Dark",
@@ -58,11 +87,12 @@ let exampleMovie1 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2020,
     rating: "TV-MA",
-    numberOfSeasons: 1,
+    numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     moreLikeThis: exampleMovies,
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers
 )
 
