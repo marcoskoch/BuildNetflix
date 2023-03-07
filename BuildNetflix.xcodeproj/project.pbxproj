@@ -29,6 +29,8 @@
 		B9D18620298B198B00F3D8AD /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */; };
 		B9D18621298B198B00F3D8AD /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */; };
 		B9E698FD29B659BA00024B90 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E698FC29B659BA00024B90 /* HomeStack.swift */; };
+		B9E698FF29B7C4A800024B90 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E698FE29B7C4A800024B90 /* SearchBar.swift */; };
+		B9E6990229B7C76E00024B90 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6990129B7C76E00024B90 /* Colors.swift */; };
 		B9E713F129836ED50075E228 /* BuildNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E713E129836ED10075E228 /* BuildNetflixApp.swift */; };
 		B9E713F229836ED50075E228 /* BuildNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E713E129836ED10075E228 /* BuildNetflixApp.swift */; };
 		B9E713F329836ED50075E228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E713E229836ED10075E228 /* ContentView.swift */; };
@@ -61,6 +63,8 @@
 		B9D1861C2988BA1300F3D8AD /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		B9E698FC29B659BA00024B90 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		B9E698FE29B7C4A800024B90 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B9E6990129B7C76E00024B90 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B9E713E129836ED10075E228 /* BuildNetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildNetflixApp.swift; sourceTree = "<group>"; };
 		B9E713E229836ED10075E228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9E713E329836ED40075E228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B9E7140C29841A3B0075E228 /* GlobalHelpers.swift */,
+				B9E6990129B7C76E00024B90 /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -142,6 +147,14 @@
 			path = HelperViews;
 			sourceTree = "<group>";
 		};
+		B9E6990029B7C4B000024B90 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B9E698FE29B7C4A800024B90 /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		B9E713DB29836ED10075E228 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 				B957093929AD50D1003310B2 /* Model */,
 				B944731529A957EF00164FA0 /* MovieDetail */,
 				B924744B2995808500A07249 /* Helpers */,
+				B9E6990029B7C4B000024B90 /* Search */,
 				B9E713E229836ED10075E228 /* ContentView.swift */,
 				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
 				B9E713E329836ED40075E228 /* Assets.xcassets */,
@@ -299,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B957093C29AE9363003310B2 /* EpisodesView.swift in Sources */,
+				B9E6990229B7C76E00024B90 /* Colors.swift in Sources */,
 				B9E7140D29841A3B0075E228 /* GlobalHelpers.swift in Sources */,
 				B957093029AD40B6003310B2 /* Trailer.swift in Sources */,
 				B983E620299AD820007D5FA2 /* Episode.swift in Sources */,
@@ -312,6 +327,7 @@
 				B9E713F129836ED50075E228 /* BuildNetflixApp.swift in Sources */,
 				B944731829A9583100164FA0 /* MoreLikeThis.swift in Sources */,
 				B9E698FD29B659BA00024B90 /* HomeStack.swift in Sources */,
+				B9E698FF29B7C4A800024B90 /* SearchBar.swift in Sources */,
 				B944731429A697F400164FA0 /* CustomTabSwitcher.swift in Sources */,
 				B957093729AD4A1A003310B2 /* TrailerList.swift in Sources */,
 				B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
