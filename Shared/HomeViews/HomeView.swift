@@ -36,28 +36,7 @@ struct HomeView: View {
                         .zIndex(-1)
                     
                     
-                    ForEach(vm.allCategories, id: \.self) { category in
-                        VStack {
-                            HStack {
-                                Text(category)
-                                    .font(.title3)
-                                    .bold()
-                                Spacer()
-                            }
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                LazyHStack {
-                                    ForEach(vm.getMovie(forCat: category)) { movie in
-                                        StandartHomeMovie(movie: movie)
-                                            .frame(width: 100, height: 200)
-                                            .padding(.horizontal, 20)
-                                            .onTapGesture {
-                                                movieDetailToShow = movie
-                                            }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    HomeStack(vm: vm, topRowSelection: topRowSelection, movieDetailToShow: $movieDetailToShow)
                 }
             }
             
@@ -65,6 +44,87 @@ struct HomeView: View {
                 MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
                     .animation(.easeInOut)
                     .transition(.opacity)
+            }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black.opacity(0.8)
+                    
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+                            
+                            Button {
+                                topRowSelection = topRow
+                                showTopRowSelection = false
+                            } label: {
+                                Text("\(topRow.rawValue)")
+                                    .foregroundColor(topRowSelection == topRow ? .white : .gray)
+                                    .bold()
+                                    .font(topRowSelection == topRow ? .title : .title2)
+                            }
+                            
+                        }
+                        
+                        Spacer()
+                        
+                        Button (action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                                .scaleEffect(x: 1.1)
+                        })
+                        .padding(.bottom, 30)
+                    }
+                    
+                    
+                   
+                }
+                .edgesIgnoringSafeArea(.all)
+            }
+            
+            if showGenreSelection {
+                Group {
+                    Color.black.opacity(0.8)
+                    
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ScrollView {
+                            ForEach(vm.allGenre, id: \.self) { genre in
+                                
+                                Button {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                } label: {
+                                    Text("\(genre.rawValue)")
+                                        .foregroundColor(homeGenre == genre ? .white : .gray)
+                                        .bold()
+                                        .font(homeGenre == genre ? .title : .title2)
+                                }
+                                .padding(.bottom, 40)
+                                
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button (action: {
+                            showGenreSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                                .scaleEffect(x: 1.1)
+                        })
+                        .padding(.bottom, 30)
+                    }
+                    
+                    
+                   
+                }
+                .edgesIgnoringSafeArea(.all)
             }
             
         }
@@ -197,3 +257,5 @@ enum HomeGenre: String {
     case Horror
     case Thriller
 }
+
+

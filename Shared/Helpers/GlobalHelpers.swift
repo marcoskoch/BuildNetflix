@@ -136,6 +136,7 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
+    episodes: allExampleEpisodes,
     promotionHeadline: "New episodes coming soon",
     trailers: exampleTrailers
 )
