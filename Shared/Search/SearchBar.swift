@@ -19,7 +19,7 @@ struct SearchBar: View {
         
         ZStack(alignment: .leading) {
             Color.graySearchBackground
-                .frame(width: 270, height: 36)
+                .frame(width: 290, height: 36)
                 .cornerRadius(8)
             
             HStack {
@@ -37,6 +37,7 @@ struct SearchBar: View {
                     .onTapGesture {
                         isEditing = true
                     }
+                    .animation(.default)
                 
                 if !text.isEmpty {
                     if isLoading {
@@ -49,7 +50,7 @@ struct SearchBar: View {
                                 }
                                 
                         }
-                        .padding(.trailing, 32)
+                        .padding(.trailing, 12)
                         .frame(width: 35, height: 35)
                         
                     } else {
@@ -60,7 +61,7 @@ struct SearchBar: View {
                                 .foregroundColor(.graySearchText)
                                 .frame(width: 35, height: 35)
                         }
-                        .padding(.trailing, 18)
+                        .padding(.trailing, 4)
                     }
                 }
                 
@@ -74,6 +75,8 @@ struct SearchBar: View {
                             .foregroundColor(.white)
                     }
                     .padding(.trailing, 10)
+                    .transition(.move(edge: .trailing))
+                    .animation(Animation.default)
                 }
 
             }

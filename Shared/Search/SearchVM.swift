@@ -12,15 +12,20 @@ class SearchVM: ObservableObject {
     
     @Published var isLoading: Bool = false
     
-    @Published var viewState: ViewState = .ready
+    @Published var viewState: ViewState = ViewState.ready
     
     @Published var popularMovies: [Movie] = []
     @Published var searchResults: [Movie] = []
     
     @Published var isShowingPopularMovies = true
     
+    init() {
+        getPopularMovies()
+    }
+    
     public func updateSearchText(with text: String) {
         setViewState(to: .loading)
+        
         
         if text.count > 0 {
             isShowingPopularMovies = false
@@ -54,13 +59,12 @@ class SearchVM: ObservableObject {
     }
     
     private func setViewState(to state: ViewState) {
-        DispatchQueue.main.sync {
+        DispatchQueue.main.async {
             self.viewState = state
-            
             self.isLoading = state == .loading
         }
     }
-     
+    
 }
 
 enum ViewState {
