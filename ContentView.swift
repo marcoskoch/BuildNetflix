@@ -32,19 +32,19 @@ struct ContentView: View {
             Text("Coming Soon")
                 .tabItem {
                     Image(systemName: "play.rectangle")
-                    Text("3")
+                    Text("Coming Soon")
                 }.tag(2)
             
             Text("Download")
                 .tabItem {
                     Image(systemName: "arrow.down.to.line.alt")
-                    Text("Home")
+                    Text("Download")
                 }.tag(3)
             
             Text("More")
                 .tabItem {
                     Image(systemName: "equal")
-                    Text("Home")
+                    Text("More")
                 }.tag(4)
         }
         .accentColor(.white)
