@@ -21,7 +21,7 @@ struct MoreLikeThis: View {
         LazyVGrid(columns: columns) {
             
             ForEach(movies) { movie in
-                StandartHomeMovie(movie: movie)
+                StandardHomeMovie(movie: movie)
             }
             
         }
