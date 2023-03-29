@@ -17,6 +17,9 @@
 		B93068CD29D324B100591DFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E713E229836ED10075E228 /* ContentView.swift */; };
 		B93068CF29D324DA00591DFA /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93068CE29D324DA00591DFA /* NotificationBar.swift */; };
 		B93068D129D32B4C00591DFA /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93068D029D32B4C00591DFA /* ComingSoonRow.swift */; };
+		B93068D329D478E100591DFA /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93068D229D478E100591DFA /* ComingSoonVM.swift */; };
+		B93068D529D47CB200591DFA /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93068D429D47CB200591DFA /* TrackableScrollView.swift */; };
+		B93068D729D4D4A500591DFA /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93068D629D4D4A500591DFA /* DownloadsView.swift */; };
 		B944731429A697F400164FA0 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944731329A697F400164FA0 /* CustomTabSwitcher.swift */; };
 		B944731629A9582100164FA0 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944731329A697F400164FA0 /* CustomTabSwitcher.swift */; };
 		B944731829A9583100164FA0 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944731729A9583100164FA0 /* MoreLikeThis.swift */; };
@@ -66,6 +69,9 @@
 		B93068CA29D3244100591DFA /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
 		B93068CE29D324DA00591DFA /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
 		B93068D029D32B4C00591DFA /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		B93068D229D478E100591DFA /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
+		B93068D429D47CB200591DFA /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		B93068D629D4D4A500591DFA /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		B944731329A697F400164FA0 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		B944731729A9583100164FA0 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		B9454602298C4E6900A744F1 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
@@ -130,8 +136,18 @@
 				B93068CA29D3244100591DFA /* ComingSoon.swift */,
 				B93068CE29D324DA00591DFA /* NotificationBar.swift */,
 				B93068D029D32B4C00591DFA /* ComingSoonRow.swift */,
+				B93068D229D478E100591DFA /* ComingSoonVM.swift */,
+				B93068D429D47CB200591DFA /* TrackableScrollView.swift */,
 			);
 			path = ComingSoon;
+			sourceTree = "<group>";
+		};
+		B93068D829D4D4AB00591DFA /* DownloadsView */ = {
+			isa = PBXGroup;
+			children = (
+				B93068D629D4D4A500591DFA /* DownloadsView.swift */,
+			);
+			path = DownloadsView;
 			sourceTree = "<group>";
 		};
 		B944731529A957EF00164FA0 /* MovieDetail */ = {
@@ -191,6 +207,7 @@
 		B9E713DB29836ED10075E228 = {
 			isa = PBXGroup;
 			children = (
+				B93068D829D4D4AB00591DFA /* DownloadsView */,
 				B9E71402298370050075E228 /* HomeViews */,
 				B957093329AD44C2003310B2 /* VideoPlayer */,
 				B957093A29AD50F0003310B2 /* HelperViews */,
@@ -331,6 +348,7 @@
 			files = (
 				B9CFF8C429CDD9970019C4B6 /* PopularMovieView.swift in Sources */,
 				B957093C29AE9363003310B2 /* EpisodesView.swift in Sources */,
+				B93068D729D4D4A500591DFA /* DownloadsView.swift in Sources */,
 				B91F3F9929C8A76C006D97A3 /* SearchVM.swift in Sources */,
 				B9E6990229B7C76E00024B90 /* Colors.swift in Sources */,
 				B93068CF29D324DA00591DFA /* NotificationBar.swift in Sources */,
@@ -341,6 +359,8 @@
 				B983E620299AD820007D5FA2 /* Episode.swift in Sources */,
 				B93068C929D25C9400591DFA /* SearchResultsGrid.swift in Sources */,
 				B9E7140029836FFE0075E228 /* HomeView.swift in Sources */,
+				B93068D529D47CB200591DFA /* TrackableScrollView.swift in Sources */,
+				B93068D329D478E100591DFA /* ComingSoonVM.swift in Sources */,
 				B9D1861D2988BA1300F3D8AD /* HomeVM.swift in Sources */,
 				B957093529AD460D003310B2 /* VideoPreviewImage.swift in Sources */,
 				B9E713F329836ED50075E228 /* ContentView.swift in Sources */,
