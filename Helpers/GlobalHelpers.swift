@@ -93,7 +93,9 @@ let exampleMovie1 = Movie(
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     moreLikeThis: exampleMovies,
     episodes: allExampleEpisodes,
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "darkPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie2 = Movie(
@@ -108,7 +110,9 @@ let exampleMovie2 = Movie(
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     promotionHeadline: "Best Rated Show",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "ozarkPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie3 = Movie(
@@ -122,7 +126,9 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "travelersPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie4 = Movie(
@@ -138,7 +144,9 @@ let exampleMovie4 = Movie(
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     episodes: allExampleEpisodes,
     promotionHeadline: "New episodes coming soon",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "whiteLinesPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie5 = Movie(
@@ -152,7 +160,9 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "dirtyJohnPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie6 = Movie(
@@ -167,7 +177,9 @@ let exampleMovie6 = Movie(
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     promotionHeadline: "Watch season 6 now",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "arrestedDevPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 let exampleMovie7 = Movie(
@@ -182,7 +194,9 @@ let exampleMovie7 = Movie(
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     promotionHeadline: "Watch season 6 now",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "darkPreview",
+    previewVideoURL: exampleVideoURL
 )
 
 var exampleMovies: [Movie] {

@@ -40,12 +40,6 @@ struct ContentView: View {
                     Image(systemName: "arrow.down.to.line.alt")
                     Text("Download")
                 }.tag(3)
-            
-            Text("More")
-                .tabItem {
-                    Image(systemName: "equal")
-                    Text("More")
-                }.tag(4)
         }
         .accentColor(.white)
     }

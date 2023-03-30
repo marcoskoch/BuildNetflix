@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B908AE3129D6018400F0CD3B /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908AE3029D6018400F0CD3B /* MoviePreviewCell.swift */; };
 		B91F3F9729C8A6D6006D97A3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F3F9629C8A6D6006D97A3 /* SearchView.swift */; };
 		B91F3F9929C8A76C006D97A3 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F3F9829C8A76C006D97A3 /* SearchVM.swift */; };
 		B91F3F9B29C8D6C1006D97A3 /* GenereteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F3F9A29C8D6C1006D97A3 /* GenereteMovies.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B908AE3029D6018400F0CD3B /* MoviePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewCell.swift; sourceTree = "<group>"; };
 		B91F3F9629C8A6D6006D97A3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B91F3F9829C8A76C006D97A3 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		B91F3F9A29C8D6C1006D97A3 /* GenereteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenereteMovies.swift; sourceTree = "<group>"; };
@@ -216,8 +218,9 @@
 				B924744B2995808500A07249 /* Helpers */,
 				B9E6990029B7C4B000024B90 /* Search */,
 				B93068CC29D3248600591DFA /* ComingSoon */,
-				B9E713E229836ED10075E228 /* ContentView.swift */,
 				B9E713E129836ED10075E228 /* BuildNetflixApp.swift */,
+				B9E713E229836ED10075E228 /* ContentView.swift */,
+				B908AE3029D6018400F0CD3B /* MoviePreviewCell.swift */,
 				B9E713E329836ED40075E228 /* Assets.xcassets */,
 				B9E713E929836ED40075E228 /* Products */,
 			);
@@ -353,6 +356,7 @@
 				B9E6990229B7C76E00024B90 /* Colors.swift in Sources */,
 				B93068CF29D324DA00591DFA /* NotificationBar.swift in Sources */,
 				B9E7140D29841A3B0075E228 /* GlobalHelpers.swift in Sources */,
+				B908AE3129D6018400F0CD3B /* MoviePreviewCell.swift in Sources */,
 				B957093029AD40B6003310B2 /* Trailer.swift in Sources */,
 				B93068CB29D3244100591DFA /* ComingSoon.swift in Sources */,
 				B91F3F9729C8A6D6006D97A3 /* SearchView.swift in Sources */,
