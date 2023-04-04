@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://www.youtube.com/embed/BjDHdf1Vd0E")!
+let exampleVideoURL = URL(string: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/103")!
@@ -88,6 +88,7 @@ let exampleMovie1 = Movie(
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 3,
+    accentColor: Color.blue,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
