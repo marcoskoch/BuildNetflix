@@ -42,6 +42,7 @@
 		B9D1861E2988BA1300F3D8AD /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861C2988BA1300F3D8AD /* HomeVM.swift */; };
 		B9D18620298B198B00F3D8AD /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */; };
 		B9D18621298B198B00F3D8AD /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */; };
+		B9DD042929DE19DF0000C91B /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD042829DE19DF0000C91B /* PreviewList.swift */; };
 		B9DDF6C129D76E290020CEB5 /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDF6C029D76E290020CEB5 /* MoviePreviewRow.swift */; };
 		B9E698FD29B659BA00024B90 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E698FC29B659BA00024B90 /* HomeStack.swift */; };
 		B9E698FF29B7C4A800024B90 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E698FE29B7C4A800024B90 /* SearchBar.swift */; };
@@ -93,6 +94,7 @@
 		B9CFF8C329CDD9970019C4B6 /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
 		B9D1861C2988BA1300F3D8AD /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		B9D1861F298B198B00F3D8AD /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		B9DD042829DE19DF0000C91B /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
 		B9DDF6C029D76E290020CEB5 /* MoviePreviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewRow.swift; sourceTree = "<group>"; };
 		B9E698FC29B659BA00024B90 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		B9E698FE29B7C4A800024B90 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		B9FB485729DB8118006D9F58 /* TrailerPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerPlayerView.swift; sourceTree = "<group>"; };
 		B9FB485929DB87DE006D9F58 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		B9FB485B29DB882A006D9F58 /* PreviewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVM.swift; sourceTree = "<group>"; };
+		B9FB485D29DC529C006D9F58 /* BuildNetflix--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BuildNetflix--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +217,7 @@
 				B9FB485729DB8118006D9F58 /* TrailerPlayerView.swift */,
 				B9FB485929DB87DE006D9F58 /* PreviewView.swift */,
 				B9FB485B29DB882A006D9F58 /* PreviewVM.swift */,
+				B9DD042829DE19DF0000C91B /* PreviewList.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -233,6 +237,7 @@
 		B9E713DB29836ED10075E228 = {
 			isa = PBXGroup;
 			children = (
+				B9FB485D29DC529C006D9F58 /* BuildNetflix--iOS--Info.plist */,
 				B93068D829D4D4AB00591DFA /* DownloadsView */,
 				B9E71402298370050075E228 /* HomeViews */,
 				B957093329AD44C2003310B2 /* VideoPlayer */,
@@ -409,6 +414,7 @@
 				B9E698FF29B7C4A800024B90 /* SearchBar.swift in Sources */,
 				B93068D129D32B4C00591DFA /* ComingSoonRow.swift in Sources */,
 				B944731429A697F400164FA0 /* CustomTabSwitcher.swift in Sources */,
+				B9DD042929DE19DF0000C91B /* PreviewList.swift in Sources */,
 				B957093729AD4A1A003310B2 /* TrailerList.swift in Sources */,
 				B9454603298C4E6900A744F1 /* SmallVerticalButton.swift in Sources */,
 				B9454606298D59BB00A744F1 /* PlayButton.swift in Sources */,
@@ -560,6 +566,7 @@
 				DEVELOPMENT_TEAM = 937VY4WKQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BuildNetflix--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -590,6 +597,7 @@
 				DEVELOPMENT_TEAM = 937VY4WKQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BuildNetflix--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

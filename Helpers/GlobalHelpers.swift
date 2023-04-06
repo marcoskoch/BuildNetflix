@@ -8,7 +8,12 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!
+let exampleVideoURL = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
+let exampleVideoURL2 = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
+let exampleVideoURL3 = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4")!
+let exampleVideoURL4 = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4")!
+let exampleVideoURL5 = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4")!
+let exampleVideoURL6 = URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/103")!
@@ -16,11 +21,14 @@ let exampleImageURL3 = URL(string: "https://picsum.photos/300/102")!
 
 let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL)
 
-let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL2)
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL2, thumbnailImageURL: exampleImageURL2)
 
-let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL3)
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL3, thumbnailImageURL: exampleImageURL3)
 
-let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
+let exampleTrailers2 = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
+let exampleTrailers3 = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
+
 
 let exampleEpisodeInfo = CurrentEpisodeInfo(episodeName: "Beginnins and Ending", description: "O iludido chefe Michael procura conduzir seus funcionários insatisfeitos na empresa de papel Dunder Mifflin em meio a incessantes contratempos e idiossincrasias.", season: 1, episode: 1)
 
@@ -111,9 +119,9 @@ let exampleMovie2 = Movie(
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     promotionHeadline: "Best Rated Show",
-    trailers: exampleTrailers,
+    trailers: exampleTrailers2,
     previewImageName: "ozarkPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL2
 )
 
 let exampleMovie3 = Movie(
@@ -127,9 +135,9 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    trailers: exampleTrailers,
+    trailers: exampleTrailers3,
     previewImageName: "travelersPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL3
 )
 
 let exampleMovie4 = Movie(
@@ -147,7 +155,7 @@ let exampleMovie4 = Movie(
     promotionHeadline: "New episodes coming soon",
     trailers: exampleTrailers,
     previewImageName: "whiteLinesPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL4
 )
 
 let exampleMovie5 = Movie(
@@ -161,9 +169,9 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
-    trailers: exampleTrailers,
+    trailers: exampleTrailers2,
     previewImageName: "dirtyJohnPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL5
 )
 
 let exampleMovie6 = Movie(
@@ -178,9 +186,9 @@ let exampleMovie6 = Movie(
     creators: "Baran bo Oban, Jantje Friese",
     cast: "Luis Hofmann, Oliver Masuci, Jordis Triebel",
     promotionHeadline: "Watch season 6 now",
-    trailers: exampleTrailers,
+    trailers: exampleTrailers3,
     previewImageName: "arrestedDevPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL6
 )
 
 let exampleMovie7 = Movie(
@@ -197,7 +205,7 @@ let exampleMovie7 = Movie(
     promotionHeadline: "Watch season 6 now",
     trailers: exampleTrailers,
     previewImageName: "darkPreview",
-    previewVideoURL: exampleVideoURL
+    previewVideoURL: exampleVideoURL2
 )
 
 var exampleMovies: [Movie] {
@@ -225,3 +233,33 @@ extension View {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
  }
+
+extension View {
+    
+    /// Hide or show the view based on a boolean value.
+    ///
+    /// Example for visibility:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true)
+    /// ```
+    ///
+    /// Example for complete removal:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true, remove: true)
+    /// ```
+    ///
+    /// - Parameters:
+    ///   - hidden: Set to `false` to show the view. Set to `true` to hide the view.
+    ///   - remove: Boolean value indicating whether or not to remove the view.
+    @ViewBuilder func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+        if hidden {
+            if !remove {
+                self.hidden()
+            }
+        } else {
+            self
+        }
+    }
+}

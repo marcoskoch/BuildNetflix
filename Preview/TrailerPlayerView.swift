@@ -24,6 +24,6 @@ struct TrailerPlayerView: View {
 
 struct TrailerPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        TrailerPlayerView(videoURL: URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!, playVideo: .constant(true))
+        TrailerPlayerView(videoURL: URL(string: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!, playVideo: .constant(true))
     }
 }
