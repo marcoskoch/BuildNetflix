@@ -25,9 +25,9 @@ let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideo
 
 let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL3, thumbnailImageURL: exampleImageURL3)
 
-let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
-let exampleTrailers2 = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
-let exampleTrailers3 = [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+let exampleTrailers2 = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+let exampleTrailers3 = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 
 
 let exampleEpisodeInfo = CurrentEpisodeInfo(episodeName: "Beginnins and Ending", description: "O iludido chefe Michael procura conduzir seus funcionários insatisfeitos na empresa de papel Dunder Mifflin em meio a incessantes contratempos e idiossincrasias.", season: 1, episode: 1)
@@ -209,7 +209,7 @@ let exampleMovie7 = Movie(
 )
 
 var exampleMovies: [Movie] {
-    return [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
+    return [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
 }
 
 extension LinearGradient {
